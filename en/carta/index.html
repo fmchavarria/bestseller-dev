@@ -100,4 +100,14 @@
     }
   });
 })();
-</script></body></html>
+</script><script data-local-preview="1">(()=>{if(location.protocol!=="file:")return;
+const fix=(href)=>{
+  if(!href||/^(?:https?:|mailto:|tel:|javascript:|data:|#)/i.test(href))return href;
+  const m=href.match(/^([^?#]*)([?#].*)?$/);if(!m)return href;
+  let p=m[1],tail=m[2]||"";
+  if(!p)return href;
+  if(p.endsWith("/"))return p+"index.html"+tail;
+  return href;
+};
+document.querySelectorAll("a[href]").forEach(a=>a.setAttribute("href",fix(a.getAttribute("href"))));
+})();</script></body></html>
